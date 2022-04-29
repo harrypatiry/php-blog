@@ -19,7 +19,13 @@
         }
 
         $sql = "SELECT * FROM posts";
-        $query = mysqli_query($connection, $sql);
+        $result = mysqli_query($connection, $sql);
+
+        while ($row = mysqli_fetch_assoc($result)) {
+            foreach ($row as $value) { 
+                echo $value; 
+            }
+        }
     
         if(isset($_POST["new_post"])) {
             $title = $_POST["title"];

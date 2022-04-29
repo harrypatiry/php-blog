@@ -24,10 +24,6 @@ if(security_validate()){
                      
                      <div class='post-container'>
                         <button><a href='post.php'>Create A Post</a></button>
-                        <?php?>
-                        <h1><?php echo $title;?></h1>
-                        <p><?php echo $text;?></p>
-                        <?php ?>
                      </div>
                      <footer>
                         <button><a href='logout.php'>Log Out</a></button>
